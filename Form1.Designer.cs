@@ -31,16 +31,17 @@
             this.btnSound = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.lblInstructions = new System.Windows.Forms.Label();
-            this.imgCat = new System.Windows.Forms.PictureBox();
-            this.imgDog = new System.Windows.Forms.PictureBox();
             this.imgPig = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).BeginInit();
+            this.imgDog = new System.Windows.Forms.PictureBox();
+            this.imgCat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgPig)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCat)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSound
             // 
+            this.btnSound.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSound.Location = new System.Drawing.Point(509, 22);
             this.btnSound.Name = "btnSound";
             this.btnSound.Size = new System.Drawing.Size(230, 94);
@@ -69,15 +70,16 @@
             this.lblInstructions.TabIndex = 2;
             this.lblInstructions.Text = "What Animal Made The Sound?";
             // 
-            // imgCat
+            // imgPig
             // 
-            this.imgCat.Image = global::Lesson_10_assignments.Properties.Resources.cat;
-            this.imgCat.Location = new System.Drawing.Point(56, 169);
-            this.imgCat.Name = "imgCat";
-            this.imgCat.Size = new System.Drawing.Size(200, 166);
-            this.imgCat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCat.TabIndex = 3;
-            this.imgCat.TabStop = false;
+            this.imgPig.Image = global::Lesson_10_assignments.Properties.Resources.pig;
+            this.imgPig.Location = new System.Drawing.Point(549, 169);
+            this.imgPig.Name = "imgPig";
+            this.imgPig.Size = new System.Drawing.Size(200, 166);
+            this.imgPig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgPig.TabIndex = 5;
+            this.imgPig.TabStop = false;
+            this.imgPig.Click += new System.EventHandler(this.imgPig_Click);
             // 
             // imgDog
             // 
@@ -88,16 +90,18 @@
             this.imgDog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgDog.TabIndex = 4;
             this.imgDog.TabStop = false;
+            this.imgDog.Click += new System.EventHandler(this.imgDog_Click);
             // 
-            // imgPig
+            // imgCat
             // 
-            this.imgPig.Image = global::Lesson_10_assignments.Properties.Resources.pig;
-            this.imgPig.Location = new System.Drawing.Point(549, 169);
-            this.imgPig.Name = "imgPig";
-            this.imgPig.Size = new System.Drawing.Size(200, 166);
-            this.imgPig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgPig.TabIndex = 5;
-            this.imgPig.TabStop = false;
+            this.imgCat.Image = global::Lesson_10_assignments.Properties.Resources.cat;
+            this.imgCat.Location = new System.Drawing.Point(56, 169);
+            this.imgCat.Name = "imgCat";
+            this.imgCat.Size = new System.Drawing.Size(200, 166);
+            this.imgCat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCat.TabIndex = 3;
+            this.imgCat.TabStop = false;
+            this.imgCat.Click += new System.EventHandler(this.imgCat_Click);
             // 
             // Form1
             // 
@@ -112,9 +116,9 @@
             this.Controls.Add(this.btnSound);
             this.Name = "Form1";
             this.Text = "GUI Part 3 - Sounds and stuff.";
-            ((System.ComponentModel.ISupportInitialize)(this.imgCat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPig)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
